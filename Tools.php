@@ -4,9 +4,9 @@
     require_once 'header.php';
 
     echo "<div class='container'>";
-    echo "<div>";
-    echo "<h2> Lista de Ferramentas </h2>";
-    echo " <a href='insert_Tools.php' class= 'btn btn-success'>Cadastrar</a><br>";
+    echo "<div row-cols>";
+    echo "<h2 class='col'> Lista de Ferramentas </h2>";
+    echo "<a href='insert_Tools.php' class= 'btn btn-success col'>Cadastrar</a><br></div>";
 
     $sql = "SELECT * FROM tb_ferramentas";
     $result = $con -> query($sql);
